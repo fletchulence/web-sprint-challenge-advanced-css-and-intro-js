@@ -254,27 +254,39 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
   "paintings": 193
 }, */
 
-function check20c(years){
+/* function check20c(years){
   let startYr = years.split(' - ')[0];
   let endYr = years.split(' - ')[1];
   if (startYr >= 1900 && endYr <= 2000){
-    console.log(startYr, " - ", endYr)
+    return returnNames;
   } 
-  return curItem.years;
-}
+} */
+
 function get20s(array) {
   let returnNames = [];
+  let returnYears = [];
   
   for (let i = 0 ; i <= array.length; i++){
-    let curItem = array[i];
+    returnYears.push(array[i]['years'];
+  }
+  return this.arrayNames
+
+
+    /* array[i].years.split(' - ') = returnYears; */
+  
+}
+
+    /* let curItem = array[i];
     let name = curItem.name;
     let years = curItem.years;
-    if (check20c("years")){
+    if (check20c(years)){
       returnNames.push(name);
     }
   }
   return returnNames;
 }
+console.log(get20s(artists)); */
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:

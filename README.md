@@ -41,11 +41,11 @@ Please answer the following questions below, you may edit the readme file to inc
 
 4. What is the purpose of using functions in code?
 
-        - A function is like a variable, but way more complex. Functions store actions that you can use in your overall co
+        - A function is like a variable, but way more complex. Functions store actions that you can use anywhere in your code. for this project they were specifically useful in Objects.
 
 5. How do you access a key inside of an object inside of an array?
 
-        - you access a key inside of an object inside of an array
+        - you access a key inside of an object inside of an array by combining multiple functions together so that you can 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
