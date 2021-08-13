@@ -244,19 +244,27 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  let arraySplit = [];
-  let arrayNames = [];
-
-  for (let i = 0 ; i < array.length ; i++){
-     arraySplit = array[i].year.split(' - ')
-
+  let arrayYears = [];
   
-    return arraySplit;
-  }
-  return arraySplit;
-}
- console.log(get20s(artists))
 
+  for (let i = 0 ; i < array.length; i++){
+    for (years in i){
+/*       console.log
+ */
+    /* let arrayYears = array[i][2]; */
+    return array[i]["years"];
+  }
+  
+
+  return arrayYears;
+    
+  }
+  /* for (let f =0; f < arraySplit.length; f++){
+    if (arraySplit[f][0] >= 1900){
+      arrayNames.push("names") */
+    
+    
+    }
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -299,7 +307,6 @@ function addArtist(array) {
       'genre': 'Web Design', 
       'nationality': 'American',
       'bio': 'asldjff asdffl;jahsdf;akjsd aks sldf;asdlfjk ;alksjdklfal; skjd f;klajs . a;shdflja s;ldjfh ;ajshdf aas df.asdf;ljhas ;ldkfj ;lasd. asdl;jkfha s',
-      'paintings': '2000'
     } 
   ]
   array.push(myArr);
@@ -327,7 +334,7 @@ function lotsOfArt(array) {
   }
   return arrayNames;
 }
-console.log('here@#$%^&*', lotsOfArt(artists));
+console.log('TASK 7', lotsOfArt(artists));
 
 
 /* ***** END OF TASKS ***** */
