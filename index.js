@@ -243,29 +243,38 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
+/* {
+  "id": 0,
+  "name": "Amedeo Modigliani",
+  "years": "1884 - 1920",
+  "genre": "Expressionism",
+  "nationality": "Italian",
+  "bio": "Amedeo Clemente Modigliani (Italian pronunciation: [ameˈdɛːo modiʎˈʎaːni]; 12 July 1884 – 24 January 1920) was an Italian Jewish painter and sculptor who worked mainly in France. He is known for portraits and nudes in a modern style characterized by elongation of faces, necks, and figures that were not received well during his lifetime but later found acceptance. Modigliani spent his youth in Italy, where he studied the art of antiquity and the Renaissance. In 1906 he moved to Paris, where he came into contact with such artists as Pablo Picasso and Constantin Brâncuși. By 1912 Modigliani was exhibiting highly stylized sculptures with Cubists of the Section d'Or group at the Salon d'Automne.",
+  "wikipedia": "http://en.wikipedia.org/wiki/Amedeo_Modigliani",
+  "paintings": 193
+}, */
+
+function check20c(years){
+  let startYr = years.split(' - ')[0];
+  let endYr = years.split(' - ')[1];
+  if (startYr >= 1900 && endYr <= 2000){
+    console.log(startYr, " - ", endYr)
+  } 
+  return curItem.years;
+}
 function get20s(array) {
-  let arrayYears = [];
+  let returnNames = [];
   
-
-  for (let i = 0 ; i < array.length; i++){
-    for (years in i){
-/*       console.log
- */
-    /* let arrayYears = array[i][2]; */
-    return array[i]["years"];
-  }
-  
-
-  return arrayYears;
-    
-  }
-  /* for (let f =0; f < arraySplit.length; f++){
-    if (arraySplit[f][0] >= 1900){
-      arrayNames.push("names") */
-    
-    
+  for (let i = 0 ; i <= array.length; i++){
+    let curItem = array[i];
+    let name = curItem.name;
+    let years = curItem.years;
+    if (check20c("years")){
+      returnNames.push(name);
     }
-
+  }
+  return returnNames;
+}
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
@@ -276,10 +285,13 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array, x) {
+function removeArtist(array, x){
   array.splice(x, 1);
+
   return array.length;
 }
+console.log(removeArtist(artists, 1))
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -299,7 +311,7 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array) {
-  const myArr =[
+  const myArray =[
     { 
       'id': 27,
       'name': 'David Fletcher', 
@@ -309,11 +321,11 @@ function addArtist(array) {
       'bio': 'asldjff asdffl;jahsdf;akjsd aks sldf;asdlfjk ;alksjdklfal; skjd f;klajs . a;shdflja s;ldjfh ;ajshdf aas df.asdf;ljhas ;ldkfj ;lasd. asdl;jkfha s',
     } 
   ]
-  array.push(myArr);
+  array.push(myArray);
   return array; 
 }
-console.log('task6', addArtist(artists));
-
+/* console.log('task6', addArtist(artists));
+ */
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
