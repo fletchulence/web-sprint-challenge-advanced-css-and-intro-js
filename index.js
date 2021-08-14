@@ -259,16 +259,18 @@ function check20c(years){
   let endYr = years.split(' - ')[1];
   if (startYr >= 1900 && endYr <= 2000){
     return true;
-  } 
+  } else{
+    return false;
+  }
 }
 
 function get20s(array) {
+  let returnNames = [];
 
   for (let i = 0 ; i <= array.length; i++){
-
     let curItem = array[i];
-    let name = curItem.name;
-    let years = curItem.years;
+    let name = curItem[1];
+    let years = curItem[2];
     if (check20c(years) === true){
       returnNames.push(name);
     }
