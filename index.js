@@ -254,10 +254,56 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
   "paintings": 193
 }, */
 
+ 
+/*
+i keep getting confused with the SILLY DASH... iterate through the array and objects using array[i].years or array[i].names respectively
+      i dont think we neeeeed to work with the dash bc all we need are the first 2 numbers of each value in the years key.
+      split the years to get SINGLE digits and then look at it like that... you just need 1@[0] and 9@[1] if you want to be more global you also need 1@[7] 9@[8] but for this example it is not necessary */
+
+      function get20s(array){
+  /* declare empty array for names */
+  let namesReturn = [];
+
+  /* iterate through recieved array */
+  for (let i=0; i <array.length; i++){
+
+    /* make variable for years[i] to see it better laid out */
+    let x = array[i].years;
+    /* console.log(typeof(x)); THIS IS SERIES OF STRINGS */
+    /* console.log(x); */
+    /* these are all the strings of numbers together */
+
+    /* now split the thing */
+    let y = x.split('');
+    /* console.log(y); shows me the numbers to make it easier*/
+    /* console.log(typeof(y)); THIS IS series of OBJECT*/
+
+    /* what the heck, i'll do all 4 numbers */
+    if (y[0] === "1" && y[1] === "9" && y[7] === "1" && y[8] === "9"){
+
+      /* push to new for names array made previously */
+      namesReturn.push(array[i].name)
+    }
+  }
+  /* check to make sure there is object and not ANOTHER empty array */
+  /* console.log(typeof(namesReturn)); CHECK*/
+  return namesReturn;
+}
+console.log(get20s(artists));
+
+/* this problem really confused me for some reason but once i got rid of the dashes it makes more sense...
+looks like it was already super late so idk what that means */
+
+/* 
+
+Honestly looked this up on the internet but it really didnt work all too welll... got very confused trying to figure out what was happening with the functions..
+
+
+
 function check20c(years){
   let startYr = years.split(' - ')[0];
   let endYr = years.split(' - ')[1];
-  if (startYr >= 1900 && endYr <= 2000){
+  if (Number(startYr) >= 1900 && Number(endYr) <= 2000){
     return true;
   } else{
     return false;
@@ -277,7 +323,7 @@ function get20s(array) {
   }
   return returnNames;
 } 
-console.log(get20s(artists));
+console.log(get20s(artists)); */
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -294,7 +340,7 @@ function removeArtist(array, x){
 
   return array.length;
 }
-console.log(removeArtist(artists, 1))
+console.log(removeArtist(artists, 0))
 
 
 
