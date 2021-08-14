@@ -23,10 +23,29 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+        It is important to keep accessibility in mind for many reasons. The main reason is obviously that it helps people who have visual AND audio impairment. Also, in this day in age when people often would prefer to listen and not read, we can use HTML to allow the screen reader to do it's thing.
+        Finally, and this is a reason that i just thought of, most google searches are based on content of website (buzz,key words) if you place an alt: tag behind your picture that is descriptive enough for the algorithm to read it - i assume you would be in pretty good shape.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+        - alt keys for images (if an image is not processing correctly, the user will see text in it's place),(if a person who has visual impairment is attempting to visit your site, the screeen reader will read it aloud)
+        - semantic HTML (gives an order for screen readers to read - first, second, third),(assists other developers in editing)
+        - visual crash/run reports (ex. shows image (check/X) in text input box to show whether the input is valid (check) or invalid(X))
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+        - Very basically a variable is something that we use to hold data. Once we store that data, we can use it wherever we want, so variables become very important. Also, you dont have be too worried about your variable name because if you dont like it, you can just reassign it. That said, you will need to use specific terms when declaring your variable. If you dont want it to be reassignable (use const), if you dont care (use var), if you probably care a little bit (use let)... You know what, on second thought, dont use var.
+
+        thank you for coming to my ted talk!
+
 4. What is the purpose of using functions in code?
+
+        - A function is like a variable, but way more complex. Functions store actions that you can use anywhere in your code. for this project they were specifically useful in Objects.
+
 5. How do you access a key inside of an object inside of an array?
+
+        - array[index].key 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
