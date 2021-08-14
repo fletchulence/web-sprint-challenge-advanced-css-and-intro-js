@@ -45,7 +45,7 @@ Please answer the following questions below, you may edit the readme file to inc
 
 5. How do you access a key inside of an object inside of an array?
 
-        - you access a key inside of an object inside of an array by using functions! 
+        - array[index].key 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
