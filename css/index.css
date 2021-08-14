@@ -40,7 +40,7 @@ h1{
 a {	
     text-decoration: none;	
     color: black;
-    font-size: 2.5rem;	
+    font-size: 100%;	
 }	
 a:hover {	
     font-weight: bold;	
@@ -71,7 +71,7 @@ header{
 nav{
     width:30%;
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     margin-top:5%;
 /*     word-spacing: 5%;
  */}
